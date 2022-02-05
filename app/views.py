@@ -26,7 +26,6 @@ def time_view(request):
     # обратите внимание – здесь HTML шаблона нет, 
     # возвращается просто текст
     current_time = datetime.now().strftime('%d-%m-%Y %H:%M:%S')
-    # print(current_time)
     msg = f'Текущее время: {current_time}'
     return HttpResponse(msg)
 
